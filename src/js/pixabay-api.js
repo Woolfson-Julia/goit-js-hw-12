@@ -1,6 +1,5 @@
 import axios from 'axios';
 
-
 export const fetchPhotosByQuery = (searchedQuery, currentPage) => {
   const axiosOptions = {
     params: {
@@ -15,5 +14,4 @@ export const fetchPhotosByQuery = (searchedQuery, currentPage) => {
   };
   return axios.get(`https://pixabay.com/api/`, axiosOptions);
 };
-
 
